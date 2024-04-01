@@ -12,25 +12,11 @@
 
 <body>
     @livewireScripts
-    {{-- navbar --}}
-    <nav>
-        <ul class="flex gap-x-2">
-            <li>
-                <a href="/" wire:navigate>home</a>
-            </li>
-            <li>
-                <a href="/products" wire:navigate>Products</a>
-            </li>
-
-        </ul>
-    </nav>
-    {{-- sidebar --}}
-    <aside></aside>
-    <main>
-        {{ $slot }}
-    </main>
-    {{-- footer --}}
-    <footer></footer>
+    <livewire:partials.header>
+        <main class="bg-slate-50">
+            {{ $slot }}
+        </main>
+        <footer></footer>
 </body>
 
 </html>

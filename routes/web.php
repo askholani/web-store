@@ -9,4 +9,4 @@ use App\Livewire\Products\ProductsComponent;
 // });
 
 Route::get('/', HomeUserComponent::class);
-Route::get('/products', ProductsComponent::class);
+Route::get('/catalog', ProductsComponent::class);
